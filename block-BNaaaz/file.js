@@ -9,11 +9,8 @@ var server = http.createServer(handleRequest)
 
 
 function handleRequest(req,res) {
-   
-    fs.readFile("./readme.txt" , (err, content)=> {
-        console.log(content.toString())
-        res.end()
-    })
+   res.setHeader("content-Type" , "text/plain")
+   fs.createReadStream("./readme.txt").pipe(res)
 }
 
 
