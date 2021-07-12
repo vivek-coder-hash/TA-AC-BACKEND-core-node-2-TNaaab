@@ -1,4 +1,7 @@
+/*var indexPath  = "../client/index.js"    // relative path of index.js from app.js
 var path = require("path")
-var indexPath =path.join(__dirname , "index.js")
+var absolutePath = path.join(__dirname , ".." , "client/index.js") // absolute path of index.js from app.js
 
-console.log(indexPath)
+console.log(absolutePath)*/
+
+
